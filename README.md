@@ -3,7 +3,7 @@
 This repository contains structured practice projects to learn and build real-world HTML and CSS components and pages.
 
 ## 📁 Project List
-- 01: Landing Page
+- 01: Landing Page(basic structure)
 - 02: Login & Signup Forms
 - 03: Contact Page
 - 04: Cards UI
