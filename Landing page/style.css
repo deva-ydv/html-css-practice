@@ -11,7 +11,7 @@
 body {
   font-family: sans-serif;
   line-height: 1.6;
-   background-color: #e4d4d4;
+  background-color: #e4d4d4;
 }
 
 .container {
@@ -51,6 +51,7 @@ body {
 /* Hamburger */
 .hamburger {
   display: none;
+  display: inline;
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
@@ -118,12 +119,12 @@ body {
     
   }
 
-  .nav-links.active {
+  .nav-links.active { 
     display: flex;
   }
 
   .nav-links li {
-    text-align: right;
+    /* text-align: right; */
     /* padding: 10px 20px; */
     text-align: center;
     margin: 0;

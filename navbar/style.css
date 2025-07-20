@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+nav{
+    background-color: rgb(56, 114, 165);
+    width: 100%; 
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+
+}
+nav .navlinks{
+    display: flex;
+    gap: 1vw;
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span{
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+
