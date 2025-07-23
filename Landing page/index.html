@@ -3,52 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Responsive Layout</title>
+  <title>Landing Page</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <h1 class="logo">MySite</h1>
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span> 
-      </div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Our Website</h1>
+    <p>Your one-stop solution for web services</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </section>
 
-  <!-- Main Content -->
-  <main class="main-content container">
-    <div class="box image-box">
-      <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=800&q=80" alt="Sample Image" />
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h2>Features</h2>
+    <div class="feature-boxes">
+      <div class="box">Fast Performance</div>
+      <div class="box">Secure Platform</div>
+      <div class="box">User Friendly</div>
     </div>
-    <div class="box text-box">
-      <h2>Welcome</h2>
-      <p>This is a sample responsive layout with a navbar, two boxes (image + text), and a footer.</p>
-    </div>
-  </main>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>We are a team of experienced developers delivering top-notch web solutions.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Website Development</li>
+      <li>Mobile App Design</li>
+      <li>SEO Optimization</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 MySite. All rights reserved.</p>
+  <footer>
+    <p>© 2025 Your Company. All rights reserved.</p>
   </footer>
-
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
-
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
 
 </body>
 </html>
